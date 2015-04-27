@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7011cefe-ba32-4ade-9409-87e812e56c39(OSEK.typesystem)">
+<model ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
