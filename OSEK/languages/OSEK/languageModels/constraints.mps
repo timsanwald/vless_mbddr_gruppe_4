@@ -24,5 +24,9 @@
     <property role="3GE5qa" value="eventSystem.statements" />
     <ref role="1M2myG" to="we7y:52flfWzirq8" resolve="WaitForEvent" />
   </node>
+  <node concept="1M2fIO" id="3Rt_k01hTco">
+    <property role="3GE5qa" value="resourceSystem" />
+    <ref role="1M2myG" to="we7y:7mkYzmcGyrL" resolve="ResourceStatement" />
+  </node>
 </model>
 
