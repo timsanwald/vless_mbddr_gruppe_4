@@ -88,6 +88,7 @@
   </registry>
   <node concept="2f3Vgq" id="3Rt_k01hkqC">
     <property role="TrG5h" value="task1" />
+    <node concept="1NL_wu" id="34vfZJSqH4o" role="1NLVwQ" />
     <node concept="3XIRFW" id="3Rt_k01hkqD" role="2fcUqg">
       <node concept="3XIRlf" id="3Rt_k01hJa$" role="3XIRFZ">
         <property role="TrG5h" value="i" />
@@ -124,10 +125,11 @@
         </node>
       </node>
     </node>
-    <node concept="1NL_wu" id="34vfZJSqH4o" role="1NLVwQ" />
   </node>
   <node concept="2f3Vgq" id="3Rt_k01hkr6">
     <property role="TrG5h" value="Task2" />
+    <node concept="WBu5D" id="34vfZJSpSMu" role="WApQ2" />
+    <node concept="1NKEvp" id="34vfZJSpSLW" role="1NKvph" />
     <node concept="3XIRFW" id="3Rt_k01hkr7" role="2fcUqg">
       <node concept="3XIRlf" id="4mzYwJ00EGX" role="3XIRFZ">
         <property role="TrG5h" value="i" />
@@ -157,8 +159,6 @@
         </node>
       </node>
     </node>
-    <node concept="1NKEvp" id="34vfZJSpSLW" role="1NKvph" />
-    <node concept="WBu5D" id="34vfZJSpSMu" role="WApQ2" />
   </node>
   <node concept="1NK0zp" id="4mzYwIZQBVF">
     <property role="TrG5h" value="Bla" />

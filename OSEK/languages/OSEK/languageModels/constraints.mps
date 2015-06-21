@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" implicit="true" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -117,10 +117,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="3Rt_k01hTco">
-    <property role="3GE5qa" value="resourceSystem" />
-    <ref role="1M2myG" to="we7y:7mkYzmcGyrL" resolve="ResourceStatement" />
   </node>
   <node concept="1M2fIO" id="4mzYwIZW_Fw">
     <property role="3GE5qa" value="eventSystem" />
