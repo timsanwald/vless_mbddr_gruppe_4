@@ -15,7 +15,6 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
-      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -43,12 +42,18 @@
     <language id="44fa5783-4610-4fbe-b5ec-eec0cbfcba26" name="OSEK">
       <concept id="509579949055529049" name="OSEK.structure.Task" flags="ng" index="2f3Vgq">
         <child id="509579949055787731" name="body" index="2fcUqg" />
-        <child id="4457883308298340546" name="resources" index="WApQ2" />
         <child id="5804951899489608366" name="signals" index="1NKvph" />
         <child id="5804951899489234121" name="slots" index="1NLVwQ" />
       </concept>
-      <concept id="4457883308298105897" name="OSEK.structure.ResourceList" flags="ng" index="WBu5D">
-        <child id="4457883308298105946" name="resources" index="WBu4q" />
+      <concept id="3688274445201599180" name="OSEK.structure.Resource" flags="ng" index="ZiKzt">
+        <child id="3688274445201599292" name="type" index="ZiK$H" />
+      </concept>
+      <concept id="3688274445201385130" name="OSEK.structure.ResourceStatement" flags="ng" index="Zj$iV">
+        <reference id="5096362653692799200" name="resource" index="2Plc8O" />
+        <child id="3688274445201385131" name="statements" index="Zj$iU" />
+      </concept>
+      <concept id="3688274445201104483" name="OSEK.structure.ResourceDeclaration" flags="ng" index="ZsVLM">
+        <child id="3688274445201599754" name="res" index="ZiKWr" />
       </concept>
       <concept id="5804951899488614594" name="OSEK.structure.Slot" flags="ng" index="1NG2KX">
         <child id="5804951899489362618" name="arguments" index="1NLrp5" />
@@ -83,88 +88,13 @@
         <child id="5804951899489739379" name="slots" index="1NRZqc" />
         <child id="5804951899489739375" name="signals" index="1NRZqg" />
       </concept>
-      <concept id="8472671906891337971" name="OSEK.structure.Resource" flags="ng" index="3T96F6" />
     </language>
   </registry>
-  <node concept="2f3Vgq" id="3Rt_k01hkqC">
-    <property role="TrG5h" value="task1" />
-    <node concept="1NL_wu" id="34vfZJSqH4o" role="1NLVwQ" />
-    <node concept="3XIRFW" id="3Rt_k01hkqD" role="2fcUqg">
-      <node concept="3XIRlf" id="3Rt_k01hJa$" role="3XIRFZ">
-        <property role="TrG5h" value="i" />
-        <node concept="3TlMh2" id="3Rt_k01hJaz" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1NKE0r" id="4mzYwIZW9ot" role="3XIRFZ">
-        <ref role="1NKE0q" node="4mzYwIZSlGh" resolve="trigger" />
-        <node concept="3TlMhd" id="4mzYwJ00EXB" role="1NKE04" />
-      </node>
-    </node>
-    <node concept="WBu5D" id="3Rt_k01h_b_" role="WApQ2">
-      <node concept="3T96F6" id="3Rt_k01h_bA" role="WBu4q">
-        <property role="TrG5h" value="res1" />
-      </node>
-      <node concept="3T96F6" id="3Rt_k01h_bD" role="WBu4q">
-        <property role="TrG5h" value="res2" />
-      </node>
-      <node concept="3T96F6" id="3Rt_k01h_bG" role="WBu4q">
-        <property role="TrG5h" value="res3" />
-      </node>
-    </node>
-    <node concept="1NKEvp" id="4mzYwIZSlGg" role="1NKvph">
-      <node concept="1NKEvs" id="4mzYwIZSlGh" role="1NKEvo">
-        <property role="TrG5h" value="trigger" />
-        <node concept="19RgSI" id="4mzYwIZSlGu" role="1NKEvq">
-          <property role="TrG5h" value="arg1" />
-          <node concept="3TlMgk" id="4mzYwIZSlGt" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2f3Vgq" id="3Rt_k01hkr6">
-    <property role="TrG5h" value="Task2" />
-    <node concept="WBu5D" id="34vfZJSpSMu" role="WApQ2" />
-    <node concept="1NKEvp" id="34vfZJSpSLW" role="1NKvph" />
-    <node concept="3XIRFW" id="3Rt_k01hkr7" role="2fcUqg">
-      <node concept="3XIRlf" id="4mzYwJ00EGX" role="3XIRFZ">
-        <property role="TrG5h" value="i" />
-        <node concept="3TlMgk" id="4mzYwJ00EGV" role="2C2TGm">
-          <property role="2caQfQ" value="false" />
-          <property role="2c7vTL" value="false" />
-        </node>
-      </node>
-      <node concept="1NLI9R" id="4mzYwJ007UU" role="3XIRFZ">
-        <ref role="1NLI9k" node="4mzYwIZSlvx" resolve="foo" />
-        <node concept="3ZVu4v" id="4mzYwJ00EIb" role="1NKPQW">
-          <ref role="3ZVs_2" node="4mzYwJ00EGX" resolve="i" />
-        </node>
-      </node>
-      <node concept="3XISUE" id="34vfZJSsR0H" role="3XIRFZ" />
-      <node concept="3XISUE" id="4mzYwJ007W8" role="3XIRFZ" />
-    </node>
-    <node concept="1NL_wu" id="4mzYwIZSlvw" role="1NLVwQ">
-      <node concept="1NG2KX" id="4mzYwIZSlvx" role="1NL_wt">
-        <property role="TrG5h" value="foo" />
-        <node concept="19RgSI" id="4mzYwIZSlFT" role="1NLrp5">
-          <property role="TrG5h" value="bar" />
-          <node concept="3TlMgk" id="4mzYwIZSlFR" role="2C2TGm">
-            <property role="2caQfQ" value="false" />
-            <property role="2c7vTL" value="false" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1NK0zp" id="4mzYwIZQBVF">
     <property role="TrG5h" value="Bla" />
-    <node concept="1NK0Wc" id="4mzYwIZSlHj" role="1NK0zo">
-      <ref role="1NK0AG" node="4mzYwIZSlGh" resolve="trigger" />
-      <ref role="1NK0AE" node="4mzYwIZSlvx" resolve="foo" />
+    <node concept="1NK0Wc" id="750Or_jUo8c" role="1NK0zo">
+      <ref role="1NK0AG" node="750Or_jUo4M" resolve="trigger" />
+      <ref role="1NK0AE" node="750Or_jUmCr" resolve="foo" />
     </node>
     <node concept="1NK0Wc" id="4mzYwIZSlHM" role="1NK0zo">
       <ref role="1NK0AG" node="4mzYwIZSlHw" resolve="timeout" />
@@ -182,6 +112,87 @@
       </node>
       <node concept="1NG2KX" id="4mzYwIZSlHy" role="1NRZqc">
         <property role="TrG5h" value="stop" />
+      </node>
+    </node>
+    <node concept="ZsVLM" id="750Or_jUoc6" role="1NK0zo">
+      <node concept="ZiKzt" id="750Or_jUoc8" role="ZiKWr">
+        <property role="TrG5h" value="res1" />
+        <node concept="3TlMh2" id="750Or_jUocq" role="ZiK$H">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2f3Vgq" id="750Or_jUkPw">
+    <property role="TrG5h" value="Task2" />
+    <node concept="1NL_wu" id="750Or_jUkPx" role="1NLVwQ">
+      <node concept="1NG2KX" id="750Or_jUmCr" role="1NL_wt">
+        <property role="TrG5h" value="foo" />
+        <node concept="19RgSI" id="750Or_jUmOI" role="1NLrp5">
+          <property role="TrG5h" value="bar" />
+          <node concept="3TlMgk" id="750Or_jUmOH" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3XIRFW" id="750Or_jUkPy" role="2fcUqg">
+      <node concept="3XIRlf" id="750Or_jUnZe" role="3XIRFZ">
+        <property role="TrG5h" value="i" />
+        <node concept="3TlMgk" id="750Or_jUnZd" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1NLI9R" id="750Or_jUnZy" role="3XIRFZ">
+        <ref role="1NLI9k" node="750Or_jUmCr" resolve="foo" />
+        <node concept="3ZVu4v" id="750Or_jUnZB" role="1NKPQW">
+          <ref role="3ZVs_2" node="750Or_jUnZe" resolve="i" />
+        </node>
+      </node>
+      <node concept="Zj$iV" id="750Or_jUodJ" role="3XIRFZ">
+        <ref role="2Plc8O" node="750Or_jUoc8" resolve="res1" />
+        <node concept="3XIRFW" id="750Or_jUodL" role="Zj$iU">
+          <node concept="3XIRlf" id="750Or_jUoe1" role="3XIRFZ">
+            <property role="TrG5h" value="i" />
+            <node concept="3TlMh2" id="750Or_jUodZ" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1NKEvp" id="750Or_jUkPz" role="1NKvph" />
+  </node>
+  <node concept="2f3Vgq" id="750Or_jUo4o">
+    <property role="TrG5h" value="Task1" />
+    <node concept="1NL_wu" id="750Or_jUo4p" role="1NLVwQ" />
+    <node concept="3XIRFW" id="750Or_jUo4q" role="2fcUqg">
+      <node concept="3XIRlf" id="750Or_jUo5j" role="3XIRFZ">
+        <property role="TrG5h" value="i" />
+        <node concept="3TlMh2" id="750Or_jUo5i" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+      <node concept="1NKE0r" id="750Or_jUo5H" role="3XIRFZ">
+        <ref role="1NKE0q" node="750Or_jUo4M" resolve="trigger" />
+        <node concept="3TlMhd" id="750Or_jUo5M" role="1NKE04" />
+      </node>
+    </node>
+    <node concept="1NKEvp" id="750Or_jUo4r" role="1NKvph">
+      <node concept="1NKEvs" id="750Or_jUo4M" role="1NKEvo">
+        <property role="TrG5h" value="trigger" />
+        <node concept="19RgSI" id="750Or_jUo4P" role="1NKEvq">
+          <property role="TrG5h" value="arg1" />
+          <node concept="3TlMgk" id="750Or_jUo4O" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
