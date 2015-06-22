@@ -29,6 +29,7 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -370,7 +371,18 @@
             </node>
           </node>
         </node>
-        <node concept="3y3z36" id="4mzYwJ008vi" role="3clFbw">
+        <node concept="3eOSWO" id="34vfZJSsUst" role="3clFbw">
+          <node concept="2OqwBi" id="4mzYwJ008vq" role="3uHU7B">
+            <node concept="2OqwBi" id="4mzYwJ008vr" role="2Oq$k0">
+              <node concept="3Tsc0h" id="4mzYwJ00a_$" role="2OqNvi">
+                <ref role="3TtcxE" to="we7y:52flfWzj0_3" />
+              </node>
+              <node concept="1YBJjd" id="4mzYwJ009q4" role="2Oq$k0">
+                <ref role="1YBMHb" node="4mzYwJ008dl" resolve="w" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="4mzYwJ008vu" role="2OqNvi" />
+          </node>
           <node concept="2OqwBi" id="4mzYwJ008vj" role="3uHU7w">
             <node concept="2OqwBi" id="4mzYwJ008vk" role="2Oq$k0">
               <node concept="2OqwBi" id="4mzYwJ008vl" role="2Oq$k0">
@@ -386,17 +398,6 @@
               </node>
             </node>
             <node concept="34oBXx" id="4mzYwJ008vp" role="2OqNvi" />
-          </node>
-          <node concept="2OqwBi" id="4mzYwJ008vq" role="3uHU7B">
-            <node concept="2OqwBi" id="4mzYwJ008vr" role="2Oq$k0">
-              <node concept="3Tsc0h" id="4mzYwJ00a_$" role="2OqNvi">
-                <ref role="3TtcxE" to="we7y:52flfWzj0_3" />
-              </node>
-              <node concept="1YBJjd" id="4mzYwJ009q4" role="2Oq$k0">
-                <ref role="1YBMHb" node="4mzYwJ008dl" resolve="w" />
-              </node>
-            </node>
-            <node concept="34oBXx" id="4mzYwJ008vu" role="2OqNvi" />
           </node>
         </node>
       </node>
