@@ -88,15 +88,19 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -337,17 +341,31 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="750Or_jTGss" role="3cqZAp">
-          <node concept="3SKdUq" id="750Or_jTGwb" role="3SKWNk">
-            <property role="3SKdUp" value="TODO Erneuern da resources einfache statements sind" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="34vfZJSs$IQ" role="3cqZAp">
-          <node concept="3clFbT" id="750Or_jTGBA" role="3cqZAk">
-            <property role="3clFbU" value="false" />
+          <node concept="3eOSWO" id="3GwH6ReZt9U" role="3cqZAk">
+            <node concept="3cmrfG" id="3GwH6ReZtj5" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="3GwH6ReZlXn" role="3uHU7B">
+              <node concept="2OqwBi" id="3GwH6ReZcSb" role="2Oq$k0">
+                <node concept="2OqwBi" id="3GwH6ReZcc$" role="2Oq$k0">
+                  <node concept="13iPFW" id="3GwH6ReZbNa" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3GwH6ReZcw4" role="2OqNvi">
+                    <ref role="3Tt5mk" to="we7y:sip4e88sbj" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="3GwH6ReZkg4" role="2OqNvi">
+                  <node concept="1xMEDy" id="3GwH6ReZkg6" role="1xVPHs">
+                    <node concept="chp4Y" id="3GwH6ReZkpZ" role="ri$Ld">
+                      <ref role="cht4Q" to="we7y:3cJox4coiqE" resolve="ResourceStatement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="34oBXx" id="3GwH6ReZsKo" role="2OqNvi" />
+            </node>
           </node>
         </node>
-        <node concept="3clFbH" id="34vfZJSso9b" role="3cqZAp" />
       </node>
     </node>
     <node concept="13hLZK" id="34vfZJSrQMJ" role="13h7CW">
