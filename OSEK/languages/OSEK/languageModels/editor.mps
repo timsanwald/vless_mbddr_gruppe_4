@@ -6,11 +6,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
     <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
     <import index="du4d" ref="r:1a7bc527-b6e9-408d-8678-c26e2dcfc779(OSEK.behavior)" implicit="true" />
-    <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -176,6 +176,16 @@
   <node concept="24kQdi" id="sip4e88sdX">
     <ref role="1XX52x" to="we7y:sip4e87t1p" resolve="Task" />
     <node concept="3EZMnI" id="sip4e8a1tH" role="2wV5jI">
+      <node concept="3F0ifn" id="3vqnUwIXMWi" role="3EZMnx">
+        <property role="3F0ifm" value="import" />
+      </node>
+      <node concept="3F2HdR" id="3vqnUwIXNd2" role="3EZMnx">
+        <ref role="1NtTu8" to="we7y:3vqnUwIXKUw" />
+        <node concept="l2Vlx" id="3vqnUwIXNd4" role="2czzBx" />
+        <node concept="ljvvj" id="3vqnUwIXNJm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="34vfZJSqq4n" role="3EZMnx">
         <property role="3F0ifm" value="Extended" />
         <node concept="pkWqt" id="34vfZJSqq4G" role="pqm2j">
