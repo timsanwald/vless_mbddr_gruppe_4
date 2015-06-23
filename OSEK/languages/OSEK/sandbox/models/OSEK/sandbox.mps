@@ -22,6 +22,7 @@
       </concept>
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="6867589085886993301" name="com.mbeddr.core.base.structure.EmptyChunkDependency" flags="ng" index="1CU$1Q" />
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
@@ -35,6 +36,7 @@
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
@@ -244,13 +246,19 @@
           </node>
         </node>
       </node>
+      <node concept="1NKEvs" id="3vqnUwJ15zU" role="1NKEvo" />
     </node>
     <node concept="3GEVxB" id="3vqnUwIY_Px" role="pbl48">
+      <ref role="3GEb4d" node="3vqnUwIV059" resolve="Bla" />
+    </node>
+    <node concept="3GEVxB" id="3vqnUwJ0dFZ" role="pbl48">
       <ref role="3GEb4d" node="3vqnUwIV059" resolve="Bla" />
     </node>
   </node>
   <node concept="N3F5e" id="3vqnUwIV059">
     <property role="TrG5h" value="Bla" />
+    <node concept="1CU$1Q" id="3vqnUwIZF2t" role="2OODSX" />
+    <node concept="1CU$1Q" id="3vqnUwIZF8C" role="2OODSX" />
     <node concept="N3Fnx" id="3vqnUwIV0hQ" role="N3F5h">
       <property role="TrG5h" value="myFunction" />
       <property role="3mNisv" value="false" />

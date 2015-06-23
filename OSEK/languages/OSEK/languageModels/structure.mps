@@ -27,6 +27,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -54,6 +55,7 @@
     <property role="TrG5h" value="Task" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="A OSEK (extended) task implementation" />
+    <property role="MwhBj" value="${module}/icons/task.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3vqnUwIXKUw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -120,6 +122,7 @@
     <property role="TrG5h" value="SlotList" />
     <property role="34LRSv" value="slots" />
     <property role="3GE5qa" value="eventSystem" />
+    <property role="MwhBj" value="T" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="52flfWzigNy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -150,6 +153,7 @@
   <node concept="1TIwiD" id="52flfWzjPKA">
     <property role="TrG5h" value="DeploymentConfiguration" />
     <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/deploymentConfig.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="52flfWzjPKB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
