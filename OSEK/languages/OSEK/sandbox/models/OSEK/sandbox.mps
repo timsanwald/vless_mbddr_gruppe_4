@@ -7,6 +7,7 @@
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="-1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="-1" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -26,6 +27,8 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="6116558314501417921" name="com.mbeddr.core.modules.structure.ExternalModule" flags="ng" index="rcWEw" />
+      <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -75,6 +78,7 @@
       <concept id="5804951899488614594" name="OSEK.structure.Slot" flags="ng" index="1NG2KX">
         <child id="5804951899489362618" name="arguments" index="1NLrp5" />
       </concept>
+      <concept id="5804951899489656011" name="OSEK.structure.IDeploymentElement" flags="ng" index="1NK0wO" />
       <concept id="5804951899489655846" name="OSEK.structure.DeploymentConfiguration" flags="ng" index="1NK0zp">
         <child id="5804951899489655847" name="elements" index="1NK0zo" />
       </concept>
@@ -117,6 +121,11 @@
       <ref role="1NK0AG" node="4mzYwIZSlHw" resolve="timeout" />
       <ref role="1NK0AE" node="4mzYwIZSlHy" resolve="stop" />
     </node>
+    <node concept="1NK0Wc" id="2YU4lKeBp99" role="1NK0zo">
+      <ref role="1NK0AG" node="4mzYwIZSlHw" resolve="timeout" />
+    </node>
+    <node concept="1NK0wO" id="2YU4lKeBp8$" role="1NK0zo" />
+    <node concept="1NK0wO" id="2YU4lKeBp8Q" role="1NK0zo" />
     <node concept="1NRNZk" id="4mzYwIZSlHv" role="1NK0zo">
       <property role="1NRNYF" value="false" />
       <property role="TrG5h" value="bla" />
@@ -152,6 +161,9 @@
         </node>
       </node>
     </node>
+    <node concept="ZsVLM" id="2YU4lKeFVzz" role="1NK0zo" />
+    <node concept="1NK0wO" id="2YU4lKeFV_J" role="1NK0zo" />
+    <node concept="1NK0wO" id="2YU4lKeFVAF" role="1NK0zo" />
   </node>
   <node concept="2f3Vgq" id="750Or_jUkPw">
     <property role="TrG5h" value="Task2" />
@@ -291,6 +303,17 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2f3Vgq" id="2YU4lKeDrPP">
+    <node concept="3XIRFW" id="2YU4lKeDrPR" role="2fcUqg" />
+    <node concept="1NKEvp" id="2YU4lKeDrPS" role="1NKvph" />
+    <node concept="1NL_wu" id="2YU4lKeDrPT" role="1NLVwQ" />
+  </node>
+  <node concept="N3F5e" id="2YU4lKeGjYH">
+    <property role="TrG5h" value="asd" />
+  </node>
+  <node concept="rcWEw" id="2YU4lKeGk1t">
+    <property role="TrG5h" value="sdasd" />
   </node>
 </model>
 
