@@ -6,11 +6,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -257,32 +257,18 @@
       <ref role="20lvS9" to="x27k:7kKaL9x4DZT" resolve="IArgumentLike" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3cJox4cp6Fc">
-    <property role="3GE5qa" value="resourceSystem" />
-    <property role="TrG5h" value="Resource" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3cJox4cp6FZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3cJox4cp6GW" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3cJox4cndTz">
     <property role="3GE5qa" value="resourceSystem" />
     <property role="TrG5h" value="ResourceDeclaration" />
-    <property role="34LRSv" value="resource" />
+    <property role="34LRSv" value="Resource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="i1WlwbeVht" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="decl" />
+      <ref role="20lvS9" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    </node>
     <node concept="PrWs8" id="3cJox4co17S" role="PzmwI">
       <ref role="PrY4T" node="52flfWzjPNb" resolve="IDeploymentElement" />
-    </node>
-    <node concept="1TJgyj" id="3cJox4cp6Oa" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="res" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3cJox4cp6Fc" resolve="Resource" />
     </node>
   </node>
   <node concept="1TIwiD" id="3cJox4coiqE">
@@ -296,10 +282,25 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     </node>
-    <node concept="1TJgyj" id="4qTUHjNVizw" role="1TKVEi">
+    <node concept="1TJgyj" id="i1Wlwbfqll" role="1TKVEi">
       <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
       <property role="20kJfa" value="resource" />
-      <ref role="20lvS9" node="3cJox4cp6Fc" resolve="Resource" />
+      <ref role="20lvS9" node="3cJox4cndTz" resolve="ResourceDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="i1WlwbgSmY">
+    <property role="3GE5qa" value="resourceSystem" />
+    <property role="TrG5h" value="ResourceVarRef" />
+    <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="i1WlwbgSmZ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cJox4cndTz" resolve="ResourceDeclaration" />
+    </node>
+    <node concept="PrWs8" id="i1WlwbgSoH" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
     </node>
   </node>
 </model>

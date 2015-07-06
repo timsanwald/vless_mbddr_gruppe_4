@@ -6,6 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" implicit="true" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
@@ -65,7 +69,11 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
+        <reference id="3562215692195600259" name="link" index="13MTZf" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -290,6 +298,55 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="i1WlwbgVrk">
+    <property role="3GE5qa" value="resourceSystem" />
+    <ref role="1M2myG" to="we7y:i1WlwbgSmY" resolve="ResourceVarRef" />
+    <node concept="1N5Pfh" id="6EsYgUUteUo" role="1Mr941">
+      <ref role="1N5Vy1" to="we7y:i1WlwbgSmZ" />
+      <node concept="1MUpDS" id="6EsYgUUteUs" role="1N6uqs">
+        <node concept="3clFbS" id="6EsYgUUteUu" role="2VODD2">
+          <node concept="3clFbF" id="6EsYgUUtnqQ" role="3cqZAp">
+            <node concept="2OqwBi" id="6EsYgUUtqeG" role="3clFbG">
+              <node concept="2OqwBi" id="6EsYgUUtnsW" role="2Oq$k0">
+                <node concept="21POm0" id="6EsYgUUtnqP" role="2Oq$k0" />
+                <node concept="z$bX8" id="6EsYgUUtnCC" role="2OqNvi">
+                  <node concept="1xMEDy" id="6EsYgUUtoNv" role="1xVPHs">
+                    <node concept="chp4Y" id="6EsYgUUtoO$" role="ri$Ld">
+                      <ref role="cht4Q" to="we7y:3cJox4coiqE" resolve="ResourceStatement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="13MTOL" id="6EsYgUUttxg" role="2OqNvi">
+                <ref role="13MTZf" to="we7y:i1Wlwbfqll" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Bn3R3" id="6EsYgUUtNIC" role="Bn3R6">
+        <node concept="3clFbS" id="6EsYgUUtNID" role="2VODD2">
+          <node concept="3clFbF" id="6EsYgUUtNPu" role="3cqZAp">
+            <node concept="2OqwBi" id="6EsYgUUtOw8" role="3clFbG">
+              <node concept="2OqwBi" id="6EsYgUUtNTT" role="2Oq$k0">
+                <node concept="Bn53e" id="6EsYgUUtNPt" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6EsYgUUtO7Z" role="2OqNvi">
+                  <ref role="3Tt5mk" to="we7y:i1WlwbeVht" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6EsYgUUtPeQ" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6EsYgUUv03t">
+    <property role="3GE5qa" value="resourceSystem" />
+    <ref role="1M2myG" to="we7y:3cJox4cndTz" resolve="ResourceDeclaration" />
   </node>
 </model>
 

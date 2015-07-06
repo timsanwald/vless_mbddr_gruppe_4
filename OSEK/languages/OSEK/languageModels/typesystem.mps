@@ -62,6 +62,7 @@
       <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
         <child id="1174657509053" name="term" index="1Z2MuG" />
       </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
@@ -459,6 +460,42 @@
     <node concept="1YaCAy" id="4mzYwJ008dl" role="1YuTPh">
       <property role="TrG5h" value="w" />
       <ref role="1YaFvo" to="we7y:52flfWzirq8" resolve="WaitForEvent" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="266frGvJRlw">
+    <property role="TrG5h" value="typeof_ResourceVarRef" />
+    <property role="3GE5qa" value="resourceSystem" />
+    <node concept="3clFbS" id="266frGvJRlx" role="18ibNy">
+      <node concept="1Z5TYs" id="266frGvJUb5" role="3cqZAp">
+        <node concept="mw_s8" id="266frGvJUbY" role="1ZfhKB">
+          <node concept="1Z2H0r" id="266frGvJUbU" role="mwGJk">
+            <node concept="2OqwBi" id="266frGvK7Uk" role="1Z2MuG">
+              <node concept="2OqwBi" id="266frGvJUgh" role="2Oq$k0">
+                <node concept="1YBJjd" id="266frGvJUcf" role="2Oq$k0">
+                  <ref role="1YBMHb" node="266frGvJRlz" resolve="lvr" />
+                </node>
+                <node concept="3TrEf2" id="266frGvK4OE" role="2OqNvi">
+                  <ref role="3Tt5mk" to="we7y:i1WlwbgSmZ" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="266frGvK85y" role="2OqNvi">
+                <ref role="3Tt5mk" to="we7y:i1WlwbeVht" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="266frGvJUb8" role="1ZfhK$">
+          <node concept="1Z2H0r" id="266frGvJTHC" role="mwGJk">
+            <node concept="1YBJjd" id="266frGvJTO1" role="1Z2MuG">
+              <ref role="1YBMHb" node="266frGvJRlz" resolve="lvr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="266frGvJRlz" role="1YuTPh">
+      <property role="TrG5h" value="lvr" />
+      <ref role="1YaFvo" to="we7y:i1WlwbgSmY" resolve="ResourceVarRef" />
     </node>
   </node>
 </model>

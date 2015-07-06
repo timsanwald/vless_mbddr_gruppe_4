@@ -9,7 +9,6 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -431,9 +430,6 @@
         </node>
       </node>
     </node>
-    <node concept="13hLZK" id="34vfZJSrQMJ" role="13h7CW">
-      <node concept="3clFbS" id="34vfZJSrQMK" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="3vqnUwIXOlF" role="13h7CS">
       <property role="TrG5h" value="visibleContentsOfType" />
       <property role="13i0it" value="false" />
@@ -687,6 +683,48 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="34vfZJSrQMJ" role="13h7CW">
+      <node concept="3clFbS" id="34vfZJSrQMK" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1kOfDKsowtb">
+    <property role="3GE5qa" value="resourceSystem" />
+    <ref role="13h7C2" to="we7y:3cJox4cndTz" resolve="ResourceDeclaration" />
+    <node concept="13hLZK" id="1kOfDKsowtc" role="13h7CW">
+      <node concept="3clFbS" id="1kOfDKsowtd" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="i1WlwbgSp_">
+    <property role="3GE5qa" value="resourceSystem" />
+    <ref role="13h7C2" to="we7y:i1WlwbgSmY" resolve="ResourceVarRef" />
+    <node concept="13hLZK" id="i1WlwbgSpA" role="13h7CW">
+      <node concept="3clFbS" id="i1WlwbgSpB" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="i1WlwbgStS" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariable" />
+      <ref role="13i0hy" to="ywuz:1LDGRqyQFAf" resolve="getVariable" />
+      <node concept="3Tm1VV" id="i1WlwbgStT" role="1B3o_S" />
+      <node concept="3clFbS" id="i1WlwbgStW" role="3clF47">
+        <node concept="3cpWs6" id="i1WlwbgT$m" role="3cqZAp">
+          <node concept="2OqwBi" id="i1WlwbgUnl" role="3cqZAk">
+            <node concept="2OqwBi" id="i1WlwbgTHu" role="2Oq$k0">
+              <node concept="13iPFW" id="i1WlwbgTD1" role="2Oq$k0" />
+              <node concept="3TrEf2" id="i1WlwbgU15" role="2OqNvi">
+                <ref role="3Tt5mk" to="we7y:i1WlwbgSmZ" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="i1WlwbgUxB" role="2OqNvi">
+              <ref role="3Tt5mk" to="we7y:i1WlwbeVht" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="i1WlwbgStX" role="3clF45">
+        <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
       </node>
     </node>
   </node>
