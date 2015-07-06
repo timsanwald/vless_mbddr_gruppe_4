@@ -25,7 +25,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -49,6 +49,7 @@
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -496,6 +497,14 @@
     <node concept="1YaCAy" id="266frGvJRlz" role="1YuTPh">
       <property role="TrG5h" value="lvr" />
       <ref role="1YaFvo" to="we7y:i1WlwbgSmY" resolve="ResourceVarRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2YU4lKeFkxu">
+    <property role="TrG5h" value="check_Task" />
+    <node concept="3clFbS" id="2YU4lKeFkxv" role="18ibNy" />
+    <node concept="1YaCAy" id="2YU4lKeFkxx" role="1YuTPh">
+      <property role="TrG5h" value="task" />
+      <ref role="1YaFvo" to="we7y:sip4e87t1p" resolve="Task" />
     </node>
   </node>
 </model>

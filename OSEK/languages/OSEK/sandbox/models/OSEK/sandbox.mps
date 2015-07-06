@@ -62,6 +62,7 @@
     <language id="44fa5783-4610-4fbe-b5ec-eec0cbfcba26" name="OSEK">
       <concept id="509579949055529049" name="OSEK.structure.Task" flags="ng" index="2f3Vgq">
         <child id="509579949055787731" name="body" index="2fcUqg" />
+        <child id="3439080352531662063" name="internalSlots" index="x5HmN" />
         <child id="5804951899489608366" name="signals" index="1NKvph" />
         <child id="5804951899489234121" name="slots" index="1NLVwQ" />
       </concept>
@@ -114,8 +115,8 @@
   <node concept="1NK0zp" id="4mzYwIZQBVF">
     <property role="TrG5h" value="Bla" />
     <node concept="1NK0Wc" id="750Or_jUo8c" role="1NK0zo">
-      <ref role="1NK0AG" node="750Or_jUo4M" resolve="trigger" />
       <ref role="1NK0AE" node="750Or_jUmCr" resolve="foo" />
+      <ref role="1NK0AG" node="2YU4lKeE8m9" resolve="trigger" />
     </node>
     <node concept="1NK0Wc" id="4mzYwIZSlHM" role="1NK0zo">
       <ref role="1NK0AG" node="4mzYwIZSlHw" resolve="timeout" />
@@ -215,7 +216,6 @@
   </node>
   <node concept="2f3Vgq" id="750Or_jUo4o">
     <property role="TrG5h" value="Task1" />
-    <node concept="1NL_wu" id="750Or_jUo4p" role="1NLVwQ" />
     <node concept="3XIRFW" id="750Or_jUo4q" role="2fcUqg">
       <node concept="3XIRlf" id="750Or_jUo5j" role="3XIRFZ">
         <property role="TrG5h" value="i" />
@@ -225,7 +225,7 @@
         </node>
       </node>
       <node concept="1NKE0r" id="750Or_jUo5H" role="3XIRFZ">
-        <ref role="1NKE0q" node="750Or_jUo4M" resolve="trigger" />
+        <ref role="1NKE0q" node="2YU4lKeE8m9" resolve="trigger" />
         <node concept="3TlMhd" id="750Or_jUo5M" role="1NKE04" />
       </node>
       <node concept="1_9egQ" id="i1Wlwbhw1N" role="3XIRFZ">
@@ -304,16 +304,18 @@
       </node>
     </node>
   </node>
-  <node concept="2f3Vgq" id="2YU4lKeDrPP">
-    <node concept="3XIRFW" id="2YU4lKeDrPR" role="2fcUqg" />
-    <node concept="1NKEvp" id="2YU4lKeDrPS" role="1NKvph" />
-    <node concept="1NL_wu" id="2YU4lKeDrPT" role="1NLVwQ" />
-  </node>
-  <node concept="N3F5e" id="2YU4lKeGjYH">
-    <property role="TrG5h" value="asd" />
+  <node concept="2f3Vgq" id="2YU4lKeFtcn">
+    <property role="TrG5h" value="Executable" />
+    <node concept="1NG2KX" id="2YU4lKeFtco" role="x5HmN">
+      <property role="TrG5h" value="execute" />
+    </node>
+    <node concept="3XIRFW" id="2YU4lKeFtcp" role="2fcUqg" />
   </node>
   <node concept="rcWEw" id="2YU4lKeGk1t">
     <property role="TrG5h" value="sdasd" />
+  </node>
+  <node concept="N3F5e" id="2YU4lKeGjYH">
+    <property role="TrG5h" value="asd" />
   </node>
 </model>
 

@@ -66,14 +66,20 @@
     <node concept="1TJgyj" id="52flfWzieN9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="slots" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="52flfWzigNx" resolve="SlotList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="52flfWzfRz2" resolve="Slot" />
+    </node>
+    <node concept="1TJgyj" id="2YU4lKeFcjJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="internalSlots" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="52flfWzfRz2" resolve="Slot" />
     </node>
     <node concept="1TJgyj" id="52flfWzjEaI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="signals" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="52flfWzjvcA" resolve="SignalList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="52flfWzjvcz" resolve="Signal" />
     </node>
     <node concept="PrWs8" id="52flfWzicvx" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />

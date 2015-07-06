@@ -6,12 +6,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
+    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="we7y" ref="r:be467ad3-2099-4e33-83c6-014367a34d5d(OSEK.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -31,7 +31,7 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -101,24 +101,19 @@
       <node concept="1MUpDS" id="4mzYwIZZUm4" role="1N6uqs">
         <node concept="3clFbS" id="4mzYwIZZUm5" role="2VODD2">
           <node concept="3clFbF" id="4mzYwIZZUm6" role="3cqZAp">
-            <node concept="2OqwBi" id="4mzYwIZZUm7" role="3clFbG">
-              <node concept="2OqwBi" id="4mzYwIZZUm8" role="2Oq$k0">
-                <node concept="2OqwBi" id="4mzYwIZZUm9" role="2Oq$k0">
-                  <node concept="21POm0" id="4mzYwIZZUma" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="4mzYwIZZUmb" role="2OqNvi">
-                    <node concept="1xMEDy" id="4mzYwIZZUmc" role="1xVPHs">
-                      <node concept="chp4Y" id="4mzYwIZZUmd" role="ri$Ld">
-                        <ref role="cht4Q" to="we7y:sip4e87t1p" resolve="Task" />
-                      </node>
+            <node concept="2OqwBi" id="4mzYwIZZUm8" role="3clFbG">
+              <node concept="2OqwBi" id="4mzYwIZZUm9" role="2Oq$k0">
+                <node concept="21POm0" id="4mzYwIZZUma" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4mzYwIZZUmb" role="2OqNvi">
+                  <node concept="1xMEDy" id="4mzYwIZZUmc" role="1xVPHs">
+                    <node concept="chp4Y" id="4mzYwIZZUmd" role="ri$Ld">
+                      <ref role="cht4Q" to="we7y:sip4e87t1p" resolve="Task" />
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="4mzYwIZZUPe" role="2OqNvi">
-                  <ref role="3Tt5mk" to="we7y:52flfWzieN9" />
-                </node>
               </node>
-              <node concept="3Tsc0h" id="4mzYwIZZVih" role="2OqNvi">
-                <ref role="3TtcxE" to="we7y:52flfWzigNy" />
+              <node concept="3Tsc0h" id="2YU4lKeDyUF" role="2OqNvi">
+                <ref role="3TtcxE" to="we7y:52flfWzieN9" />
               </node>
             </node>
           </node>
@@ -274,24 +269,19 @@
       <node concept="1MUpDS" id="4mzYwIZZEXP" role="1N6uqs">
         <node concept="3clFbS" id="4mzYwIZZEXQ" role="2VODD2">
           <node concept="3clFbF" id="4mzYwIZZEYr" role="3cqZAp">
-            <node concept="2OqwBi" id="4mzYwIZZHMz" role="3clFbG">
-              <node concept="2OqwBi" id="4mzYwIZZGM9" role="2Oq$k0">
-                <node concept="2OqwBi" id="4mzYwIZZF0x" role="2Oq$k0">
-                  <node concept="21POm0" id="4mzYwIZZEYq" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="4mzYwIZZGFA" role="2OqNvi">
-                    <node concept="1xMEDy" id="4mzYwIZZGFC" role="1xVPHs">
-                      <node concept="chp4Y" id="4mzYwIZZGGH" role="ri$Ld">
-                        <ref role="cht4Q" to="we7y:sip4e87t1p" resolve="Task" />
-                      </node>
+            <node concept="2OqwBi" id="4mzYwIZZGM9" role="3clFbG">
+              <node concept="2OqwBi" id="4mzYwIZZF0x" role="2Oq$k0">
+                <node concept="21POm0" id="4mzYwIZZEYq" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="4mzYwIZZGFA" role="2OqNvi">
+                  <node concept="1xMEDy" id="4mzYwIZZGFC" role="1xVPHs">
+                    <node concept="chp4Y" id="4mzYwIZZGGH" role="ri$Ld">
+                      <ref role="cht4Q" to="we7y:sip4e87t1p" resolve="Task" />
                     </node>
                   </node>
                 </node>
-                <node concept="3TrEf2" id="4mzYwIZZH2w" role="2OqNvi">
-                  <ref role="3Tt5mk" to="we7y:52flfWzjEaI" />
-                </node>
               </node>
-              <node concept="3Tsc0h" id="4mzYwIZZI21" role="2OqNvi">
-                <ref role="3TtcxE" to="we7y:52flfWzjvcB" />
+              <node concept="3Tsc0h" id="2YU4lKeDxNM" role="2OqNvi">
+                <ref role="3TtcxE" to="we7y:52flfWzjEaI" />
               </node>
             </node>
           </node>
@@ -347,6 +337,9 @@
   <node concept="1M2fIO" id="6EsYgUUv03t">
     <property role="3GE5qa" value="resourceSystem" />
     <ref role="1M2myG" to="we7y:3cJox4cndTz" resolve="ResourceDeclaration" />
+  </node>
+  <node concept="1M2fIO" id="2YU4lKeFizr">
+    <ref role="1M2myG" to="we7y:sip4e87t1p" resolve="Task" />
   </node>
 </model>
 
